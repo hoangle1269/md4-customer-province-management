@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head th:fragment="head">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>Spring Customer Province</title>
 
     <style>
-        h3{background-color: blue; color: white; padding: 10px 0 10px 20px;}
-        footer{margin: 10px 0;}
+        h3 {
+            background-color: blue;
+            color: white;
+            padding: 10px 0 10px 20px;
+        }
 
-        #customers {
+        footer {
+            margin: 10px 0;
+        }
+
+        #provinces {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
             border-collapse: collapse;
             width: 100%;
         }
 
-        #customers td, #customers th {
+        #provinces td, #provinces th {
             border: 1px solid #ddd;
             padding: 8px;
         }
 
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        #provinces tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
-        #customers tr:hover {background-color: #ddd;}
+        #provinces tr:hover {
+            background-color: #ddd;
+        }
 
-        #customers th {
+        #provinces th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
@@ -34,7 +45,7 @@
             color: white;
         }
 
-        input[type=text],input[type=email]{
+        input[type=text], input[type=email] {
             width: 100%;
             padding: 12px 0;
             margin: 8px 0;
@@ -67,7 +78,10 @@
             padding: 20px;
         }
 
-        .notify span{font-size: 15px; color: blue;}
+        .notify span {
+            font-size: 15px;
+            color: blue;
+        }
     </style>
 </head>
 <body>
