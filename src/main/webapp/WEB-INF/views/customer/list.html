@@ -41,7 +41,7 @@
     </thead>
     <tbody>
     <tr th:each="c,cStatus : ${customers}">
-        <td th:text="${cStatus.count}"></td>
+        <td th:text="${(customers.number * customers.size) + cStatus.index + 1}"></td>
         <td th:text="${c.getFirstName()}"></td>
         <td th:text="${c.getLastName()}"></td>
         <td th:if="${c.getProvince() != null}" th:text="${c.getProvince().getName()}"></td>
